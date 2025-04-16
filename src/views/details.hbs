@@ -1,0 +1,27 @@
+<div class="details">
+    {{!-- Artwork Image --}}
+    {{#if work.image}}
+        <img src="/images/{{work.image}}" alt="{{work.title}}" style="max-width: 60%; height: auto;" />
+    {{else}}
+        <p>Cannot load image for {{work.title}}</p>
+    {{/if}}
+
+    {{!-- Title with Year --}}
+    <h3>{{work.title}} ({{work.year}})</h3>
+
+    {{!-- Medium --}}
+    {{#if work.medium}}
+        <p>Medium: {{work.medium}}</p>
+    {{else}}
+        <p>Medium: Unknown</p>
+    {{/if}}
+
+    {{!-- Description --}}
+    {{#if work.description}}
+        <p>{{work.description}}</p>
+    {{else}}
+        <p>No description available</p>
+    {{/if}}
+
+    <a href="/">Back to The Gallery</a> <!-- Link back to gallery report -->
+</div>

@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="column middle">
+        <h1 style="font-size: 50px">-The Gallery-</h1>
+        <div class="card-container">
+            {{#each artworks}}
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/images/{{this.image}}" alt="{{this.title}}" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>{{this.title}}</h3>
+                        <p><small>{{this.year}}</small></p>
+                        <a href="/work/{{id}}">Details</a>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

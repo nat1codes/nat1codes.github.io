@@ -1,0 +1,50 @@
+<div class="dashboard">
+    <h1>Welcome back, Paiten!</h1>
+
+    <h2>Current Commission Requests:</h2>
+    <ul>
+        {{#each commissions}}
+            <h2>------------------------------------</h2>
+            <h3>{{this.name}}</h3>
+            <p>Contact Details:</p>
+            <p>     Email: {{this.email}}</p>
+            <p>     Phone: {{this.phone}}</p>
+            <p> </p>
+            <p>Message:</p>
+            <p>{{this.message}}</p>
+            <p>Created On:</p>
+            <p>     {{this.createdAt}}</p>
+            <h2>------------------------------------</h2>
+            <h2></h2>
+        {{/each}}
+    </ul>
+    <h2>Add a new work:</h2>
+    <form action="/add-work" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+        </div>
+
+        <div class="form-group">
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year" required>
+        </div>
+
+        <div class="form-group">
+        <label for="medium">Medium:</label>
+            <input type="text" id="medium" name="medium" required>
+        </div>
+
+        <div class="form-group">
+        <label for="image">Image:</label>
+        <input type="file" id="image" name="image" required>
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <input type="text" id="description" style="width:900px;height:100px;" name="description" required>
+        </div>
+
+        <button type="submit">Add Work</button>
+    </form>
+</div>
