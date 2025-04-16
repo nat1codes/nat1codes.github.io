@@ -9,7 +9,7 @@ async function main() {
     data: {
       title: 'NGS Christmas Mock-Up 1',
       year: 2024,
-      image: 'NGS_Card_Mockup.png',
+      image: 'NGS-Card-Mockup.png',
       medium: 'Digital Art',
       description: 'A sample Christmas card for the No Greater Sacrifice foundation to send to scholarship recipients.',
     },
@@ -20,7 +20,7 @@ async function main() {
     data: {
       title: 'NGS Christmas Mock-Up 2',
       year: 2024,
-      image: 'NGS_Card_Mockup2.png',
+      image: 'NGS-Card-Mockup2.png',
       medium: 'Digital Art',
       description: 'A sample Christmas card for the No Greater Sacrifice foundation to send to scholarship recipients.',
     },
