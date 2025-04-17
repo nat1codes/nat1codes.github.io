@@ -7,28 +7,6 @@ async function main() {
 
   await prisma.work.create({
     data: {
-      title: 'NGS Christmas Mock-Up 1',
-      year: 2024,
-      image: 'Ngs-Card-Mockup.png',
-      medium: 'Digital Art',
-      description: 'A sample Christmas card for the No Greater Sacrifice foundation to send to scholarship recipients.',
-    },
-  });
-  console.log("Inserted NGS Christmas Mock-Up 1");
-
-  await prisma.work.create({
-    data: {
-      title: 'NGS Christmas Mock-Up 2',
-      year: 2024,
-      image: 'Ngs-Card-Mockup2.png',
-      medium: 'Digital Art',
-      description: 'A sample Christmas card for the No Greater Sacrifice foundation to send to scholarship recipients.',
-    },
-  });
-  console.log("Inserted NGS Christmas Mock-Up 2");
-
-  await prisma.work.create({
-    data: {
       title: 'Playing Cards',
       year: 2024,
       image: 'paitencards.png',
